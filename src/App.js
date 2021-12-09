@@ -7,6 +7,9 @@ import data from './componets/task2Statistics/data.json';
 import FriendList from './componets/task3FriendList/FriendList';
 import friends from './componets/task3FriendList/friends.json';
 
+import TransactionHistory from './componets/task3TransactionHistory/TransactionHistory';
+import transactions from './componets/task3TransactionHistory/transactions.json';
+
 export default function App() {
   return (
     <div>
@@ -17,11 +20,10 @@ export default function App() {
         location={user.location}
         stats={user.stats}
       />
-
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
-
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
