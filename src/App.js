@@ -10,7 +10,7 @@ import friends from './componets/task3FriendList/friends.json';
 import TransactionHistory from './componets/task3TransactionHistory/TransactionHistory';
 import transactions from './componets/task3TransactionHistory/transactions.json';
 
-export default function App() {
+const App = () => {
   return (
     <div>
       <Profile
@@ -26,4 +26,6 @@ export default function App() {
       <TransactionHistory items={transactions} />
     </div>
   );
-}
+};
+
+export default App;
