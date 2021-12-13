@@ -7,12 +7,14 @@ import data from './componets/task2Statistics/data.json';
 import FriendList from './componets/task3FriendList/FriendList';
 import friends from './componets/task3FriendList/friends.json';
 
-import TransactionHistory from './componets/task3TransactionHistory/TransactionHistory';
-import transactions from './componets/task3TransactionHistory/transactions.json';
+import TransactionHistory from './componets/task4TransactionHistory/TransactionHistory';
+import transactions from './componets/task4TransactionHistory/transactions.json';
+
+import Container from './componets/Container/Container';
 
 const App = () => {
   return (
-    <div>
+    <Container>
       <Profile
         avatar={user.avatar}
         username={user.username}
@@ -24,7 +26,7 @@ const App = () => {
       <Statistics stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+    </Container>
   );
 };
 
