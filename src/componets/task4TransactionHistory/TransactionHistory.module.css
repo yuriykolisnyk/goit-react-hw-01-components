@@ -1,0 +1,31 @@
+.transactionHistory {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.head {
+  border: 0px solid #b5b5b5;
+  background-color: #00bcd5;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.title {
+  width: 33.3%;
+  padding: 15px 5px;
+}
+
+.tbody:nth-child(even) {
+  background-color: rgb(196, 228, 245);
+}
+
+.itemsBody {
+  padding: 15px 5px;
+  color: #808184;
+  text-transform: capitalize;
+}
