@@ -1,16 +1,28 @@
 import PropTypes from 'prop-types';
-import s from './Statistic.module.css';
+import s from './Statistics.module.css';
+
+function randColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  const color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+  return color;
+}
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section class={s.statistics}>
-      {title && <h2 class={s.title}>{title}</h2>}
+    <section className={s.statistics}>
+      {title && <h2 className={s.title}>{title}</h2>}
 
-      <ul class={s.stat - list}>
+      <ul className={s.statList}>
         {stats.map(({ id, label, percentage }) => (
-          <li class="item" key={id}>
-            <span class="label">{label}</span>
-            <span class="percentage">{percentage}%</span>
+          <li
+            className={s.item}
+            key={id}
+            style={{ backgroundColor: randColor() }}
+          >
+            <span className={s.label}>{label}</span>
+            <span className={s.percentage}>{percentage}%</span>
           </li>
         ))}
       </ul>
